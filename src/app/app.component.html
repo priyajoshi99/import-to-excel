@@ -1,0 +1,21 @@
+
+<div style="padding: 5px; float: right;">
+  <button (click)="exportAsXLSX()" class="btn btn-secondary">
+    Export-Excel
+  </button>
+</div>
+  
+<table class="table table-striped">
+	<tr>
+		<td><b>Player Name</b></td>
+		<td><b>Player Country</b></td>
+		<td><b>Player Club</b></td>
+  </tr>
+  <tbody>
+	<tr *ngFor="let item of dataOfFootballers">
+		<td>{{item.playerName}}</td>
+		<td>{{item.playerCountry}}</td>
+		<td>{{item.playerClub}}</td>
+  </tr>
+  </tbody>
+</table>
